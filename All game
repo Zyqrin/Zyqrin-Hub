@@ -18,16 +18,16 @@ local gameScripts = {
         ))()
     end,
 
-    -- GAME 2 (isi nanti)
+    -- GAME 2 
     [119987266683883] = function()
         print("Load Script: Survive LAVA for Brainrots")
-        -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyqrin/Survive-LAVA-for-Brainrots/refs/heads/main/Main%20Lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyqrin/Survive-LAVA-for-Brainrots/refs/heads/main/Main%20Lua"))()
     end,
 
-    -- GAME 3 (isi nanti)
+    -- GAME 3 
     [138048509924404] = function()
         print("Load Script: Save Brainrots From LAVA")
-        -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyqrin/Save-Brainrots-from-LAVA/refs/heads/main/Main%20Lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyqrin/Save-Brainrots-from-LAVA/refs/heads/main/Main%20Lua"))()
     end,
 }
 
