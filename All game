@@ -40,6 +40,15 @@ local gameScripts = {
             "https://raw.githubusercontent.com/Zyqrin/Climb-For-Brainrots/main/Main%20Lua"
         ))()
     end,
+
+
+  -- GAME 5
+    [139299356663913] = function()
+        print("Load Script: Jump for Brainrots!")
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Zyqrin/Jump-for-Brainrots-/main/Main%20Lua"
+        ))()
+    end,
 }
 
 local runScript = gameScripts[placeId]
