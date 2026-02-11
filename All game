@@ -1,0 +1,45 @@
+-- Anti double load
+if getgenv().MultiGameLoader then return end
+getgenv().MultiGameLoader = true
+
+local player = game:GetService("Players").LocalPlayer
+local placeId = game.PlaceId
+
+-- =========================
+-- DAFTAR GAME + SCRIPT
+-- =========================
+
+local gameScripts = {
+
+    -- GAME 1
+    [131623223084840] = function()
+        print("Load Script: Save Brainrots from LAVA")
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Zyqrin/Save-Brainrots-from-LAVA/refs/heads/main/Main%20Lua"
+        ))()
+    end,
+
+    -- GAME 2 (isi nanti)
+    [0000000000] = function()
+        print("Script Game 2 belum diisi")
+        -- loadstring(game:HttpGet("LINK_SCRIPT_2"))()
+    end,
+
+    -- GAME 3 (isi nanti)
+    [0000000001] = function()
+        print("Script Game 3 belum diisi")
+        -- loadstring(game:HttpGet("LINK_SCRIPT_3"))()
+    end,
+}
+
+-- =========================
+-- EKSEKUSI
+-- =========================
+
+local runScript = gameScripts[placeId]
+
+if runScript then
+    runScript()
+else
+    player:Kick("Game ini tidak didukung oleh loader.")
+end
