@@ -31,9 +31,9 @@ local gameScripts = {
             "https://raw.githubusercontent.com/Zyqrin/Save-Brainrots-from-LAVA/main/Main%20Lua"
         ))()
     end,
-}
 
--- GAME 4
+
+   -- GAME 4
     [134951244280326] = function()
         print("Load Script: Climb For Brainrots")
         loadstring(game:HttpGet(
