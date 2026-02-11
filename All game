@@ -1,3 +1,4 @@
+
 -- Anti double load
 if getgenv().MultiGameLoader then return end
 getgenv().MultiGameLoader = true
@@ -5,35 +6,32 @@ getgenv().MultiGameLoader = true
 local player = game:GetService("Players").LocalPlayer
 local placeId = game.PlaceId
 
--- =========================
--- DAFTAR GAME + SCRIPT
--- =========================
-
 local gameScripts = {
 
     -- GAME 1
     [131623223084840] = function()
         print("Load Script: Escape Tsunami For Brainrots")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyqrin/Escape-Tsunami-For-Brainrots/refs/heads/main/Main%20lua"
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Zyqrin/Escape-Tsunami-For-Brainrots/main/Main%20lua"
         ))()
     end,
 
-    -- GAME 2 
+    -- GAME 2
     [119987266683883] = function()
         print("Load Script: Survive LAVA for Brainrots")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyqrin/Survive-LAVA-for-Brainrots/refs/heads/main/Main%20Lua"))()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Zyqrin/Survive-LAVA-for-Brainrots/main/Main%20Lua"
+        ))()
     end,
 
-    -- GAME 3 
+    -- GAME 3
     [138048509924404] = function()
         print("Load Script: Save Brainrots From LAVA")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyqrin/Save-Brainrots-from-LAVA/refs/heads/main/Main%20Lua"))()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Zyqrin/Save-Brainrots-from-LAVA/main/Main%20Lua"
+        ))()
     end,
 }
-
--- =========================
--- EKSEKUSI
--- =========================
 
 local runScript = gameScripts[placeId]
 
